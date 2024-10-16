@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* CSS */
+.custom_button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #ffff00 0, #bbce3c 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  position: absolute;
+  top: 82%;
+  left: 43.3%;
+}
+
+.custom_button-var {
+  top: 45%;
+  left: 42.5%;
+  color: white;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+}
+
+.custom_button:disabled {
+  top: 82%;
+  left: 43.3%;
+  box-shadow: none;
+  color: rgb(235, 226, 226);
+  background-image: radial-gradient(100% 100% at 100% 0, #8f9494 0, #babbbe 100%);
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+body {
+  background-color: #41435B;
+  font-family: "JetBrains Mono",monospace;
+}
+
+.card {
+  height: 500px;
+  width: 1300px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+}
+
+.star {
+  width: 400px;
+  position: absolute;
+  top: 66%;
+  left: 37.7%;
+  transform: translate(-50%, -50%);
+}
+.star > * {
+  float: right;
+}
+.star label {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.star label:nth-of-type(5):after {
+  animation-delay: 0.5s;
+}
+.star label:nth-of-type(4):after {
+  animation-delay: 0.4s;
+}
+.star label:nth-of-type(3):after {
+  animation-delay: 0.3s;
+}
+.star label:nth-of-type(2):after {
+  animation-delay: 0.2s;
+}
+.star label:nth-of-type(1):after {
+  animation-delay: 0.1s;
+}
+.star label:after {
+  transition: all 1s ease-out;
+  position: absolute;
+  content: "☆";
+  color: orange;
+  font-size: 65px;
+}
+
+.star input {
+  display: none;
+}
+.star input:checked + label:after,
+.star input:checked ~ label:after {
+  content: "★";
+  color: gold;
+  text-shadow: 0 0 10px gold;
+}
