@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container text-center pt-5">
+    <div class = "weatherSection" id="weatherSection">
+    </div>
+    <div class="container pt-5">
+        <div class="">
+            <button type="submit" class="custom_button custom_button-var" id="nextJoke">Next joke</button>
+        </div>
+        
+        <div class="">
+            <button type="submit" class="custom_button" id="clearRating">Clear rating</button>
+        </div>
+        <div class="rating">
+            <input type="radio" name="rating" id="r1">
+            <label for="r1"></label>
+            <input type="radio" name="rating" id="r2">
+            <label for="r2"></label>
+            <input type="radio" name="rating" id="r3">
+            <label for="r3"></label>
+        </div>
         <div class="card">
             <div class="card-body text-center">
-                <h1 class="card-title pt-3 pb-5">Preparat per riure?</h1>
-                <h4 class="card-text pb-3" id = "jokePlace" ></h4>
-                <button type="submit" class="custom_button custom_button-var" id="nextJoke">Següent acudit</button>
-                <div>
-                    <button type="submit" class="custom_button" id="clearRating">Clear rating</button>
-                </div>
-                <div class="star">
-                    <input type="radio" id="r1">
-                    <label for="r1"></label>
-                    <input type="radio" id="r2">
-                    <label for="r2"></label>
-                    <input type="radio"  id="r3">
-                    <label for="r3"></label>
-                </div>
+                <h1 class="card-title pt-3 pb-5">Ready for a laugh?</h1>
+                <h2 class="card-text" id = "jokePlace" ></h2>
+                <h4 class="card-text" id = "jokePlaceUrl" ></h4>  
             </div>
         </div>
     </div>
