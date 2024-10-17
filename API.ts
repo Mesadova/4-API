@@ -112,6 +112,7 @@ async function getJoke() {
         jokePlace.textContent = currentJoke;
     }
     console.log(reportJokes);
+    
     document.body.style.backgroundImage = `url(img/${randomNumber}.jpg)`;
 }
 

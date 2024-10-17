@@ -28,6 +28,10 @@ body {
   vertical-align: top;
 }
 
+.card-title {
+  color: yellowgreen;
+}
+
 .weatherSection {
   display: inline-flex;
   flex-direction: column;
