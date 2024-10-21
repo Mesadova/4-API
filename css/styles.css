@@ -112,13 +112,13 @@ body {
 @-webkit-keyframes pulse {
   50% {
     color: #e3e3e3;
-    text-shadow: 0 0 15px #777777;
+    text-shadow: 0 0 15px gold;
   }
 }
 @keyframes pulse {
   50% {
     color: #e3e3e3;
-    text-shadow: 0 0 15px #777777;
+    text-shadow: 0 0 15px gold;
   }
 }
 
@@ -146,7 +146,7 @@ body {
           animation: 1s pulse ease;
 }
 .rating label:hover:after {
-  color: #5e5e5e;
+  color: gold;
   text-shadow: 0 0 15px #5e5e5e;
 }
 .rating input {
